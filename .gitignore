@@ -1,0 +1,5 @@
+# Ignore files in file_storage
+file_storage/ 
+
+# Ignore environment variables
+.env
