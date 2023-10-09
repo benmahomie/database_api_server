@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Files</title>
+</head>
+<body>
+    <h1>Available Files</h1>
+    <ul>
+        {% for file in files %}
+        <li>
+            {{ file }}
+            {% if permission in ['download', 'edit'] %}
+            (<a href="{{ url_for('download_file', filename=file) }}">Download</a>)
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    
+    {% if permission == 'edit' %}
+    <h2>Upload New File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    {% endif %}
+    </ul>
+</body>
+</html>
