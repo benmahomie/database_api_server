@@ -2,4 +2,4 @@
 file_storage/ 
 
 # Ignore environment variables
-.env
+*.env
