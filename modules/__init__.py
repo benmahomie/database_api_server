@@ -5,8 +5,8 @@ import logging
 import secrets
 
 # Signature configuration
-secret = 'secret' # Uncomment for testing (not secure)
-# secret = secrets.token_hex(16) # Uncomment for deployment (uses HMAC hash like SHA-256)
+# secret = 'secret' # Uncomment for testing (not secure)
+secret = secrets.token_hex(16) # Uncomment for deployment (uses HMAC hash like SHA-256)
 
 # Start Flask App
 app = Flask(__name__)
