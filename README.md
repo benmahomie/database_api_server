@@ -6,7 +6,7 @@ This program utilizes a Flask server as a web-based API to handle viewing and up
 
 I chose this project because I wanted to come up an AirDrop alternative, where I could share files to friends in an easy way while implementing some type of security.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/-GDlyzQrjwU)
 
 # Network Communication
 
